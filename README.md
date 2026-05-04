@@ -18,6 +18,24 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Email verification setup
+
+To send real verification emails, copy `.env.example` to `.env.local` and update the SMTP settings:
+
+```bash
+cp .env.example .env.local
+```
+
+Then set your SMTP provider values for:
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASSWORD`
+- `EMAIL_FROM`
+
+The waitlist verification email will be sent from `anassaithou@gmail.com` by default.
+
 ## Project Structure
 
 - `src/app/` - Next.js App Router pages
